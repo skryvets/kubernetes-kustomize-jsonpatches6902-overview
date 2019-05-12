@@ -1,0 +1,5 @@
+- op: add
+  path: "/spec/containers/0/env"
+  value:
+  - name: APP_NAME
+    value: ABC Inc. Private Git Repository
