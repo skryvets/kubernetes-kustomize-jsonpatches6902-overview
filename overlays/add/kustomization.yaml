@@ -4,19 +4,16 @@ bases:
 - ../../base
 patchesJson6902:
 - target:
-    group: ""
     version: v1
     kind: Pod
     name: gitea
   path: gitea-pod-patch-app-name.yaml
 - target:
-    group: ""
     version: v1
     kind: Pod
     name: gitea
   path: gitea-pod-patch-sidecar-container.yaml
 - target:
-    group: ""
     version: v1
     kind: Service
     name: gitea-service
