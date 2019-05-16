@@ -1,0 +1,11 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+bases:
+- ../../base
+patchesJson6902:
+- target:
+    group: ""
+    version: v1
+    kind: Service
+    name: gitea-service
+  path: gitea-service-patch-remove-port-name.yaml
